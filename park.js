@@ -18,7 +18,7 @@ Park.prototype.fertile = function(rate){
 Park.prototype.calculateDinosaurs = function(years){
   var dinoCount = 0;
   for (dinosaur of this.enclosure) {
-    dinoCount += (1 + (dinosaur.offspring)) ** years;
+    dinoCount += (1 + dinosaur.offspring) ** years;
   }
   return dinoCount;
 }
